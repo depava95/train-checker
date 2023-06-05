@@ -62,7 +62,7 @@ public class CheckerService {
                 log.info(type.toPrettyString());
             });
         } catch (Exception ex) {
-            log.error("Failed");
+            log.error("Failed! Message: {}", ex.getMessage());
         }
     }
 }
